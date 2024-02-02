@@ -253,3 +253,10 @@ footer {
         z-index: -10000;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    #profile {
+        visibility: hidden;
+        z-index: -10000;
+    }
+}
