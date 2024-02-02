@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HobbyMedia ™</title>
+        <link rel="stylesheet" href="stylesheet/default.css">
+        <script src="script.js"></script>
+    </head> 
+    <body>
+        <nav>
+            <img src = "images/HobbyMedia.jpeg">
+            <h1>HobbyMedia ™</h1>
+            <div class="nav-buttons">
+                <button id="einloggen" onclick="showAlert2()">Login</button>
+                <button id="einloggen" onclick="showAlert()">Sign up</button>
+            </div>
+        </nav>
+        <nav id="sidebar">
+            
+                <img src="images/HobbyMedia.jpeg" alt="Button 1">
+                <a href="https://silas123456789.github.io/HobbyMedia/Profile">
+                    <button class="standort-button">Profile</button>
+                </a>
+                <button class="standort-button" onclick="openPopup2()">Infos</button>
+        </nav>  
+        <div id="zentrierterBlock">
+              <h2>Neuste Beiträge von den Profilen</h2>
+              <div class="profil-block">
+                 <h3>Maya <a id="profile" href="https://silas123456789.github.io/HobbyMedia/Maya"> ➚ </a></h3>
+                 <p>heute gehe ich zum Kickboxen an der Domschule, wer hat Lust mitzukommen?</p>
+                 <button class="standort-button" onclick="openPopup()">Standort</button>
+                 <p>gepostet 26.01.24 16:43</p>
+              </div>
+              <div class="profil-block">
+                <h3>Silas <a id="profile" href="https://silas123456789.github.io/HobbyMedia/Silas">➚ </a></h3>
+                <p>Die Bühnentechnik veranstaltet am 30.01.24 einen "Tag der offenen Tür". Wer Lust hat, kann gerne vorbeikommen</p>
+                <button class="standort-button" onclick="openPopup3()">Standort</button>
+                <p>gepostet am 26.01.24 16:01</p>
+              </div>
+              <div class="profil-block">
+                <h3>Konrad <a id="profile" href="https://silas123456789.github.io/HobbyMedia/Konrad">➚ </a></h3>
+                <p>Schwimmen war gestern wieder mega cool! Wer hat Bock morgen mitzukommen?</p>
+                <button class="standort-button" onclick="openPopup4()">Standort</button>
+                <p>gepostet am 25.01.24 11:02</p>
+                <a id="link" href="https://silas123456789.github.io/HobbyMedia/KommentareB2">Kommentare (2)</a>
+              </div>
+              <div class="profil-block">
+                <h3>Maya <a id="profile" href="https://silas123456789.github.io/HobbyMedia/Maya"> ➚ </a></h3>
+                <p>Hat jemand Lust morgen mit zum Kickboxen zu kommen?</p>
+                <button class="standort-button" onclick="openPopup()">Standort</button>
+                <p>gepostet am 18.01.24 12:51</p>
+                <a id="link" href="https://silas123456789.github.io/HobbyMedia/KommentareB1">Kommentare (2)</a>
+              </div>
+              <div class="profil-block">
+                <h3>HobbyMedia</h3>
+                <p>Willkommen auf dem Chatportal. Bitte registriere Dich oder Logge Dich ein, um mit den Beiträgen interagieren zu können. Bitte bedenke, dass HobbyMedia zurzeit auf Windows ausgelegt ist und somit die Registrierung nur über den PC möglich. </p>
+                <p>gepostet am 18.01.24 00:01</p>
+              </div>
+        </div>
+        <div id="standortPopup" class="popup">
+            <div class="popup-content">
+                <span id="close-btn" onclick="closePopup()">&times;</span>
+                <img id="domschule" src="images/domschule.png" alt="Standort-Bild">
+            </div>
+        </div>
+        <div id="standortPopup2" class="popup">
+            <div class="popup-content">
+                <span id="close-btn" onclick="closePopup3()">&times;</span>
+                <img id="domschule" src="images/Screenshot (4).png" alt="Standort-Bild">
+            </div>
+        </div>
+        <div id="standortPopup3" class="popup">
+            <div class="popup-content">
+                <span id="close-btn" onclick="closePopup4()">&times;</span>
+                <img id="domschule" src="images/Screenshot (5).png" alt="Standort-Bild">
+            </div>
+        </div>
+    </body>
+    <div id="infosPopup" class="popup2">
+        <div class="popup-content">
+            <span id="close-btn2" onclick="closePopup2()">&times;</span>
+            <p>"HobbyMedia" ist ein Projekt der RobotikAG der Winfriedschule Fulda und soll in näherer Zukunft </p>
+            <p>zur Veröffentlichung verfügbar sein.</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 HobbyMedia ™ | Kontakt: info@hobbymedia.com
+    </footer>
+</html>
